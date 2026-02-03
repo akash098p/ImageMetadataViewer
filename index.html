@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Metadata Viewer - View & Remove EXIF Data</title>
+    <meta name="description" content="Upload images to view and remove EXIF metadata including camera info, GPS location, date, and more. Works offline.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📸 Image Metadata Viewer</h1>
+            <p>View and remove EXIF metadata from your images - Works 100% offline in your browser</p>
+        </header>
+
+        <section class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">Drop your image here or click to browse</div>
+                <div class="upload-hint">Supports JPG, PNG, HEIC, WebP - All processing happens locally</div>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+        </section>
+
+        <div id="contentArea" class="content-area hidden">
+            <div class="content-grid">
+                <!-- Image Preview Card -->
+                <div class="card">
+                    <h2>🖼️ Image Preview</h2>
+                    <div class="preview-container">
+                        <img id="previewImage" class="preview-image" alt="Preview">
+                    </div>
+                    <div class="image-info">
+                        <div class="info-item">
+                            <span class="info-label">Filename:</span>
+                            <span id="fileName" class="info-value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">File Size:</span>
+                            <span id="fileSize" class="info-value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Dimensions:</span>
+                            <span id="dimensions" class="info-value">-</span>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-primary" id="downloadOriginal">
+                            ⬇️ Download Original
+                        </button>
+                        <button class="btn btn-secondary" id="newImage">
+                            🔄 New Image
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Metadata Card -->
+                <div class="card">
+                    <h2>📋 EXIF Metadata</h2>
+                    <div id="metadataContainer" class="metadata-container">
+                        <div class="loading">Loading metadata...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camera & Settings Card -->
+            <div class="card" id="cameraCard">
+                <h2>📷 Camera & Settings</h2>
+                <div id="cameraInfo" class="info-grid"></div>
+            </div>
+
+            <!-- GPS Location Card -->
+            <div class="card hidden" id="gpsCard">
+                <h2>🌍 GPS Location</h2>
+                <div id="gpsInfo" class="info-grid"></div>
+                <div id="mapContainer" class="map-container"></div>
+            </div>
+
+            <!-- Date & Time Card -->
+            <div class="card" id="dateCard">
+                <h2>🕐 Date & Time Information</h2>
+                <div id="dateInfo" class="info-grid"></div>
+            </div>
+
+            <!-- Additional Metadata Card -->
+            <div class="card" id="additionalCard">
+                <h2>🔍 Additional Metadata</h2>
+                <div id="additionalInfo" class="metadata-grid"></div>
+            </div>
+
+            <!-- Remove Metadata Section -->
+            <div class="card remove-section">
+                <h2>🗑️ Remove Metadata</h2>
+                <p class="warning-text">⚠️ This will create a new image without any EXIF metadata. The original file will not be modified.</p>
+                <div class="button-group">
+                    <button class="btn btn-primary" id="removeMetadata">
+                        🧹 Remove All Metadata & Download
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>🔒 All processing happens locally in your browser. Your images never leave your device.</p>
+            <p class="footer-links">
+                <a href="https://github.com/yourusername/image-metadata-viewer" target="_blank">GitHub</a> •
+                <a href="#" id="aboutLink">About</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>About Image Metadata Viewer</h2>
+            <p>This tool allows you to view and remove EXIF metadata from images including:</p>
+            <ul>
+                <li>Camera make and model</li>
+                <li>Camera settings (ISO, aperture, shutter speed, focal length)</li>
+                <li>GPS location data</li>
+                <li>Date and time taken</li>
+                <li>Software and editing information</li>
+                <li>Copyright and artist information</li>
+            </ul>
+            <p><strong>Privacy:</strong> All processing happens entirely in your browser. No images or data are uploaded to any server.</p>
+            <p><strong>Offline:</strong> Once loaded, this tool works completely offline.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
