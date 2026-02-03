@@ -43,6 +43,10 @@ A fast, professional, and privacy-focused web application to view and remove EXI
 - **Remove Metadata** - Strip all EXIF data
 - **Download Clean** - Get metadata-free version
 
+## 💻 Live Preview 
+
+🔗  https://akash098p.github.io/ImageMetadataViewer/
+
 ## 🎯 Supported Formats
 
 - ✅ JPEG / JPG
@@ -106,7 +110,7 @@ Then open: `http://localhost:8000`
 **Using Git:**
 ```bash
 # Navigate to your project folder
-cd image-metadata-viewer
+cd ImageMetadataViewer 
 
 # Initialize git
 git init
@@ -139,7 +143,7 @@ git push -u origin main
 
 Your site will be live at:
 ```
-https://YOUR-USERNAME.github.io/image-metadata-viewer/
+https://akash098p.github.io/ImageMetadataViewer/
 ```
 
 Wait 1-2 minutes for deployment to complete.
