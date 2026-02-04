@@ -55,99 +55,6 @@ A fast, professional, and privacy-focused web application to view and remove EXI
 - ✅ TIFF
 - ✅ HEIC (browser dependent)
 
-## 🚀 Quick Start
-
-### Option 1: Open Locally (Easiest)
-
-1. Download all three files:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-
-2. Place them in the same folder
-
-3. Double-click `index.html` or open it in your browser
-
-4. Start uploading images!
-
-### Option 2: Use a Local Server
-
-If you need to test with a server:
-
-**Using Python:**
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-
-**Using Node.js:**
-```bash
-npx http-server
-```
-
-**Using PHP:**
-```bash
-php -S localhost:8000
-```
-
-Then open: `http://localhost:8000`
-
-## 🌐 Deploy to GitHub Pages
-
-### Step 1: Create Repository
-
-1. Go to [GitHub](https://github.com) and sign in
-2. Click **New Repository**
-3. Name it: `image-metadata-viewer`
-4. Make it **Public**
-5. Click **Create repository**
-
-### Step 2: Upload Files
-
-**Using Git:**
-```bash
-# Navigate to your project folder
-cd ImageMetadataViewer 
-
-# Initialize git
-git init
-
-# Add all files
-git add index.html styles.css script.js README.md
-
-# Commit
-git commit -m "Initial commit: Image Metadata Viewer"
-
-# Add remote (replace YOUR-USERNAME)
-git remote add origin https://github.com/YOUR-USERNAME/image-metadata-viewer.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-**Using GitHub Website:**
-1. In your repository, click **Upload files**
-2. Drag and drop all files
-3. Click **Commit changes**
-
-### Step 3: Enable GitHub Pages
-
-1. Go to repository **Settings**
-2. Click **Pages** in the left sidebar
-3. Under **Source**, select **main** branch
-4. Click **Save**
-
-Your site will be live at:
-```
-https://akash098p.github.io/ImageMetadataViewer/
-```
-
-Wait 1-2 minutes for deployment to complete.
-
 ## 📖 How to Use
 
 ### Basic Workflow
@@ -246,44 +153,6 @@ Wait 1-2 minutes for deployment to complete.
 - Memory efficient processing
 - Async/await for smooth UX
 
-## 📁 File Structure
-
-```
-image-metadata-viewer/
-│
-├── index.html          # Main HTML structure
-├── styles.css          # Professional styling
-├── script.js           # Core functionality
-└── README.md          # This file
-```
-
-## 🎨 Customization
-
-### Change Color Scheme
-
-Edit `styles.css` root variables:
-
-```css
-:root {
-    --primary: #2563eb;        /* Main blue */
-    --primary-dark: #1d4ed8;   /* Darker blue */
-    --secondary: #7c3aed;      /* Purple accent */
-    --success: #10b981;        /* Green for success */
-    --danger: #ef4444;         /* Red for warnings */
-}
-```
-
-### Modify Processing Limits
-
-Edit `script.js`:
-
-```javascript
-// Maximum file size (default: no limit)
-const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
-
-// Supported formats
-const SUPPORTED_FORMATS = ['image/jpeg', 'image/png', 'image/webp'];
-```
 
 ## 🔐 Privacy & Security
 
@@ -356,21 +225,6 @@ Planned features:
 - Study exposure relationships
 - Understand EXIF standards
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Keep code clean and commented
-- Test on multiple browsers
-- Maintain performance standards
-- Update README for new features
 
 ## 📄 License
 
@@ -388,12 +242,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Icons - Inline SVG for better performance
 - Color scheme inspired by modern design systems
 
-## 📞 Support
-
-### Getting Help
-- Check the [Troubleshooting](#-troubleshooting) section
-- Open an issue on GitHub
-- Review closed issues for solutions
 
 ### Reporting Bugs
 When reporting bugs, please include:
@@ -403,13 +251,6 @@ When reporting bugs, please include:
 - Steps to reproduce
 - Error messages (if any)
 
-## 📊 Stats
-
-- **Lines of Code:** ~500
-- **Load Time:** <1 second
-- **Processing Time:** <1 second (average)
-- **Dependencies:** 1 (ExifReader CDN)
-- **Size:** ~15KB total (minified)
 
 ## 🌟 Star This Project
 
@@ -423,12 +264,6 @@ If you find this tool useful, please consider giving it a star on GitHub!
 
 ---
 
-### Quick Links
 
-- [Report Bug](https://github.com/YOUR-USERNAME/image-metadata-viewer/issues)
-- [Request Feature](https://github.com/YOUR-USERNAME/image-metadata-viewer/issues)
-- [View Demo](https://YOUR-USERNAME.github.io/image-metadata-viewer/)
-
----
 
 ⭐ **Star this repo if you find it useful!** ⭐
