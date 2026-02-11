@@ -45,6 +45,8 @@ A fast, professional, and privacy-focused web application to view and remove EXI
 
 ## 💻 Live Preview 
 
+![ImageMetadataViewer](https://i.postimg.cc/8cvYSYnt/Image-Meta-Data.jpg)
+
 🔗  https://akash098p.github.io/ImageMetadataViewer/
 
 ## 🎯 Supported Formats
